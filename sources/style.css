@@ -167,6 +167,7 @@ main
             margin: 0 0 10px 0;
             border: 10px solid var(--darkblue);
             background-size: cover;
+            object-fit: cover;
         }
         .project-card:hover
             {
@@ -213,6 +214,13 @@ main
                 color: var(--darkblue);
                 border-bottom: 5px solid var(--darkblue);
             }
+        footer p
+        {
+            text-align: center;
+            margin: 10px 5px;
+            font-size: small;
+        }
+        
         footer div
             {
                 padding: 20px 0 50px 0;
@@ -224,5 +232,6 @@ main
                 color:var(--darkblue);  
                 border-bottom: 3px solid var(--darkblue);
             }
+        
 /*Footer Section End*/
 
