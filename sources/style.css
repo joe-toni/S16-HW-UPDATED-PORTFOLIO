@@ -1,0 +1,228 @@
+/*Custom Color Variables*/
+:root
+    {
+         --softblue: rgb(146,204,205);
+         --darkblue: rgb(68,88,118);
+         --currentgrey: rgb(49,52,61);
+         --backgroundwhite: rgb(237,237,246);
+    }
+/*Styling for the Whole Page container*/
+body
+    {
+        background-color: var(--backgroundwhite);
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: auto;
+        width: 100vw;
+        max-width: 1280px;
+        max-height: 1920px;
+    }
+/*Header Styling for Title and Nav bar*/
+header
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background-color: var(--currentgrey);
+    }
+    .page_title
+        {
+            flex-basis: 35%;
+        }
+        .page_title h1
+            {
+                text-align: center;
+                width: auto;
+                padding: 10px 30px;
+                 background-color: var(--softblue);
+            }
+        .page_title h2
+            {
+                color: var(--softblue);
+            }
+
+    nav
+        {
+        }
+        nav a
+            {
+                margin: 5px;
+                color: var(--softblue);
+                text-decoration: none;
+            }
+/*Header Section End*/
+/*Bio Section Styling for About me and Profile Picture*/
+.bio
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-image: url(images/pawel-czerwinski-background-pattern.jpg);
+        background-size: cover ;
+    }
+    .mini
+        {
+            height: 100px;
+        }
+    .bio h2
+        {
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+           width: 100%;
+            color: var(--darkblue);
+            background-color: var(--softblue);
+            border-radius: 15px;
+        }
+        .bio h2:hover
+        {
+            cursor: pointer;
+        }
+    .bio p
+        { 
+             display: flex;
+            flex-direction: column;
+            color: var(--softblue);
+            text-align: center;
+            margin: 10px auto;
+            align-items: center;
+            height:auto;
+            width: 80%;
+            border-radius: 15px;
+            background-color: var(--darkblue);
+            border: 5px solid var(--darkblue);
+            
+        }
+    .bio img
+            {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                border: 5px solid var(--softblue);
+            }
+    .bio .hideMe
+        {
+            display: none;
+        }
+/*Bio Section End*/
+/*Main Section Styling for Project Displays*/
+main
+    {
+        border-top: 5px solid black;
+        height: auto;
+        width: 100%;
+
+    }
+    main h2
+        {
+            text-align: center;
+            margin: 10px auto;
+            width: 150px;
+            height: 30px;
+            color: var(--darkblue);
+            border-bottom: 5px solid var(--darkblue);
+        }   
+    .project-container
+        {
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+        }  
+    .first-project
+        {
+            background-image: url(./images/There_And_Back_Original_Screenshot.png);
+      
+        }
+    .day-planner
+        {
+            background-image: url(./images/Work_Day_Scheduler_Original_Screenshot.png);
+  
+        }
+    .weather-dashboard
+        {
+            background-image: url(./images/Weather_Dashboard_Original_Screenshot.png);
+       
+        }
+    .focused
+        {
+            z-index: 5;
+      
+        }
+    /*Initial Main Section End*/
+    /*General styling for all project card classes*/        
+    .project-card
+        {
+            display: flex;
+            border-radius: 5px;
+            height: 200px;
+            width: 95%;
+            margin: 0 0 10px 0;
+            border: 10px solid var(--darkblue);
+            background-size: cover;
+        }
+        .project-card:hover
+            {
+                cursor: pointer;
+            }
+        .project-info
+            {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 98%;
+                height: auto;
+                border: 5px solid var(--darkblue);
+                border-radius: 15px 15px 0 0;
+                background-color: var(--softblue);
+            }
+        .project-info p
+            {
+                width: 90%;
+            }
+        .project-info a
+        {
+            margin: 5px;
+        }
+        .hideInfo
+            {
+                display: none;
+            }
+    /*Project Card Section End*/
+/*Main Section End*/
+/*Styling for the Contact Information portion of the page*/
+    footer
+        {
+            margin-top: 10px;
+        }
+        footer h2
+            {
+                text-align: center;
+                margin: 30px auto 20px auto;
+                width: 250px;
+                height: 30px;
+                color: var(--darkblue);
+                border-bottom: 5px solid var(--darkblue);
+            }
+        footer div
+            {
+                padding: 20px 0 50px 0;
+                display: flex;
+                justify-content: space-around;
+            }
+        footer div a 
+            {
+                color:var(--darkblue);  
+                border-bottom: 3px solid var(--darkblue);
+            }
+/*Footer Section End*/
+
