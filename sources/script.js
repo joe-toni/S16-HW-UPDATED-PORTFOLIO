@@ -1,4 +1,6 @@
 //Started by selecting all the elements from the dom that will be manipulated in our fucntions
+const pillarGallary = document.querySelector(".pillar-gallary");
+const techBlog = document.querySelector(".tech-blog");
 const firstProject = document.querySelector(".first-project");
 const dayPlanner = document.querySelector(".day-planner");
 const weatherDash = document.querySelector(".weather-dashboard");

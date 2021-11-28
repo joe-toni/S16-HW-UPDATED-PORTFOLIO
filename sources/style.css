@@ -42,6 +42,7 @@ header
             }
         .page_title h2
             {
+                text-align: center;
                 color: var(--softblue);
             }
 
@@ -136,21 +137,7 @@ main
             flex-direction: column;
             height: auto;
         }  
-    .first-project
-        {
-            background-image: url(./images/There_And_Back_Original_Screenshot.png);
-      
-        }
-    .day-planner
-        {
-            background-image: url(./images/Work_Day_Scheduler_Original_Screenshot.png);
-  
-        }
-    .weather-dashboard
-        {
-            background-image: url(./images/Weather_Dashboard_Original_Screenshot.png);
-       
-        }
+
     .focused
         {
             z-index: 5;
@@ -163,7 +150,7 @@ main
             display: flex;
             border-radius: 5px;
             height: 200px;
-            width: 95%;
+            width: 98%;
             margin: 0 0 10px 0;
             border: 10px solid var(--darkblue);
             background-size: cover;
@@ -204,6 +191,9 @@ main
     footer
         {
             margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         footer h2
             {
@@ -217,12 +207,13 @@ main
         footer p
         {
             text-align: center;
-            margin: 10px 5px;
+            margin: 10px 15px;
             font-size: small;
         }
         
         footer div
             {
+                width: 80%;
                 padding: 20px 0 50px 0;
                 display: flex;
                 justify-content: space-around;
