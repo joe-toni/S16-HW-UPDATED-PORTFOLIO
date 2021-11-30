@@ -37,10 +37,14 @@
     {
         width: 200px;
     }
+    .project-card
+    {
+        height: 400px;
+    }
 
     .focused
     {
-        height: 600px;
+        height: 650px;
     }
 
     footer p

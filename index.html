@@ -9,18 +9,24 @@
     </head>
     
     <body> 
+
+        <!--The header portion of the portfolio is meant to contain the title and nav to the three specific sections of the site-->
         <header>
             <div class = "page_title">
             <h1>JOSE FABURRIETA</h1>
             <h2> MULTIMEDIA DEVELOPER</h2>
             </div>
+            <!--The nav is composed of links to corresponding portions of the portfolio with the biography link having the added 
+            functionality of opening the about me section since it technically is already in view-->
             <nav >
+                
                  <a  href = "#biography" onclick="expand()">About Me</a>
                  <a href = "#work_display">Work</a>
                  <a href= "#personal_info">Personal Info</a>
             </nav>
         </header>
-
+        <!--This bio section will contain a small summary and a profile image that expands when the user clicks
+        on the title of the section-->
         <section id = "biography" class= "bio mini">
             <h2 onclick="expand()">ABOUT ME</h2>
             <p class = "aboutMe hideMe">
@@ -31,30 +37,34 @@
                 <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
             </p>
         </section>
-
+        <!--This section contains all the projects that will be on display with the description segments hidden away until the user
+        clicks on the title of the corresponding assignment-->
         <main id = "work_display" class ="core_content">
             <h2> WORK</h2>
 
             <div class= "project-container">
-
+                <!--Each one of these sections is comprised of a tittle , description, links, and a screenshot-->
                 <h3 onclick="focusProject(pillarGallary, Info[0])">PILLAR ART GALLERY</h3>
                 <div class ="project-info hideInfo">
-                    <p>This project was a collaborative work that attempted 
+                    <p>This project was a collaborative attempt at creating a site that allowed registered users to submit images to a central hub that would then display them
+                        along side others as if the viewer were visiting a gallery or museum, It used images brought in from a museum api to initially populate the 
+                        slides of the site. For more information feel free to visit the sites below.
                     </p>
-                    <a href="https://lordlowdar.github.io/thereandback/">Link to Live Site</a>
-                    <a href="https://github.com/joe-toni/thereandback">Link to App Repo</a>
-                </div>
+                    <div class="links">
+                    <a href="https://personal-pillar-application.herokuapp.com/">Link to Live Site</a>
+                    <a href="https://github.com/joe-toni/pillarArtApplication">Link to App Repo</a>
+                </div></div>
                 <img src= "sources/images/The_Art_Pillar_Personal_Copy_Screenshot.png" class= "project-card pillar-gallary">
 
                 <h3 onclick="focusProject(techBlog, Info[1])">THE TECH BLOG</h3>
                 <div class ="project-info hideInfo">
-                    <p>This project was a collaborative work that was aimed at creating an app that would assist a user in planning
-                        potential road trips by providing weather infomation along a route and a planner tool for keeping track of tasks 
-                        that needed to be done before, during and after the trip.
+                    <p>This assingment was my first commplete full stack application that employeed an MVC framework to  produce a basic blog posting site, users of this site with created accounts
+                        able to post blogs, and comments that were persisted through being stored in a database that would present all saved instances to be dislayed from a central page.
                     </p>
-                    <a href="https://lordlowdar.github.io/thereandback/">Link to Live Site</a>
-                    <a href="https://github.com/joe-toni/thereandback">Link to App Repo</a>
-                </div>
+                    <div class="links">
+                    <a href="https://s14-hw-tech-blog.herokuapp.com/">Link to Live Site</a>
+                    <a href="https://github.com/joe-toni/S14-HW-TECH-BLOG">Link to App Repo</a>
+                </div></div>
                 <img src= "sources/images/The_Tech_Blog_Original_Homescreen.png" class= "project-card tech-blog">
 
                 <h3 onclick="focusProject(firstProject, Info[2])">FIRST PROJECT</h3>
@@ -63,9 +73,10 @@
                         potential road trips by providing weather infomation along a route and a planner tool for keeping track of tasks 
                         that needed to be done before, during and after the trip.
                     </p>
+                    <div class="links">
                     <a href="https://joe-toni.github.io/thereandback/">Link to Live Site</a>
                     <a href="https://github.com/joe-toni/thereandback">Link to App Repo</a>
-                </div>
+                </div></div>
                 <img src= "sources/images/There_And_Back_Original_Screenshot.png" class= "project-card first-project">
             
 
@@ -75,9 +86,10 @@
                             It would correctly determine the time of day to color code which segments were either past, present, or future.
                             The app was also able to persist user entries through site reloads.
                         </p>
+                        <div class="links">
                         <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Live Site</a>
                         <a href= "https://github.com/joe-toni/S5-HW-WORK-DAY-PLANNER" >Link to Site Repo</a>
-                    </div>                
+                    </div></div>              
                     <img src= "sources/images/Work_Day_Scheduler_Original_Screenshot.png"  class= "project-card day-planner" >
 
 
@@ -87,23 +99,26 @@
                         to get and display the weather for said location. It would display the current conditions as well as a slightly simpler
                         5 day forcast. It would also persist search user search history and display it in a scrollable div. 
                     </p>
+                    <div class="links">
                     <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">Link to Live Site</a>
                     <a href= "https://github.com/joe-toni/S6-HW-WEATHER-DASHBOARD">Link to Site Repo</a>                    
-                 </div>
+                 </div></div>
                 <img src= "sources/images/Weather_Dashboard_Original_Screenshot.png" class= "project-card weather-dashboard">
             </div>
         </main>
 
+        <!--The footer section is going to contain links to a few contact methods with the actual values hidden until the user hovers over each one revealing
+        the title or letting them click directly on it which should open a new window-->
         <footer id= "personal_info" class = "end-page-footer">
             <h2> CONTACT INFO </h2>
             <p>Thank you for visiting my portfolio, click on the links below for more information. Check out the Gmail or Linked in if you'd like to contact me with any questions, or the Github if you'd like to see more of my
                 works.
             </p>
             <div class = "personal_links">
-                <a title = "joefaburrieta@gmail.com" href = "mailto:joefaburrieta@gmail.com" target = "_blank">Gmail</a>
-                <a title ="joe-toni@github.com" href = "https://github.com/joe-toni" target = "_blank">GitHub</a>
-                <a title = "jose-faburrieta@linkin.com" href = "https://www.linkedin.com/in/jose-faburrieta-48b857212/" target = "'_blank">Linkedin</a>
-                <a title = "PDF on Google Drive" href= "https://drive.google.com/file/d/1fHyu2Mj764PV34woKTPMhsTnPGz5h6Fr/view?usp=sharing" target = "_blank">Resume</a>
+                <a  title = "joefaburrieta@gmail.com" href = "mailto:joefaburrieta@gmail.com" target = "_blank">Gmail</a>
+                <a  title ="joe-toni@github.com" href = "https://github.com/joe-toni" target = "_blank">GitHub</a>
+                <a  title = "jose-faburrieta@linkin.com" href = "https://www.linkedin.com/in/jose-faburrieta-48b857212/" target = "'_blank">Linkedin</a>
+                <a  title = "PDF on Google Drive" href= "https://drive.google.com/file/d/1Ik4IolHb3sce24JsdvjJqw7XQ10BsPG3/view?usp=sharing" target = "_blank">Resume</a>
             </div>
         </footer>
         
