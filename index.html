@@ -44,67 +44,93 @@
 
             <div class= "project-container">
                 <!--Each one of these sections is comprised of a tittle , description, links, and a screenshot-->
-                <h3 onclick="focusProject(pillarGallary, Info[0])">PILLAR ART GALLERY</h3>
-                <div class ="project-info hideInfo">
-                    <p>This project was a collaborative attempt at creating a site that allowed registered users to submit images to a central hub that would then display them
+
+                <div class = "project-card">  
+                    <h3 onclick="focusProject(pillarGallary, Info[0])">PILLAR ART GALLERY</h3>    
+                    <div class ="project-info">
+                    <h4>Descritpion</h4>
+                    <p class = "hideInfo">
+                        This project was a collaborative attempt at creating a site that allowed registered users to submit images to a central hub that would then display them
                         along side others as if the viewer were visiting a gallery or museum, It used images brought in from a museum api to initially populate the 
                         slides of the site. For more information feel free to visit the sites below.
                     </p>
-                    <div class="links">
-                    <a href="https://personal-pillar-application.herokuapp.com/">Link to Live Site</a>
-                    <a href="https://github.com/joe-toni/pillarArtApplication">Link to App Repo</a>
-                </div></div>
-                <img src= "sources/images/The_Art_Pillar_Personal_Copy_Screenshot.png" class= "project-card pillar-gallary">
+                    </div>
+                    <img src= "sources/images/The_Art_Pillar_Personal_Copy_Screenshot.png" class= "project-image pillar-gallary">
+                    <div class = "project-links">   
+                        <a class = "left-link" href="https://personal-pillar-.herokuapp.com/">Link to Live Site</a>
+                        <a class = "right-link" href="https://github.com/joe-toni/pillarArtApplication">Link to App Repo</a>
+                    </div>
+                </div>
 
-                <h3 onclick="focusProject(techBlog, Info[1])">THE TECH BLOG</h3>
-                <div class ="project-info hideInfo">
-                    <p>This assingment was my first commplete full stack application that employeed an MVC framework to  produce a basic blog posting site, users of this site with created accounts
-                        able to post blogs, and comments that were persisted through being stored in a database that would present all saved instances to be dislayed from a central page.
+
+                <div class = "project-card">  
+                    <h3 onclick="focusProject(techBlog, Info[1])">THE TECH BLOG</h3>    
+                    <div class ="project-info">
+                    <h4>Descritpion</h4>
+                    <p class = "hideInfo">
+                        This assingment was my first commplete full stack application that employeed an MVC framework to  produce a basic blog posting site, users of this site with created accounts
+                        able to post blogs, and comments that were persiste
                     </p>
-                    <div class="links">
-                    <a href="https://s14-hw-tech-blog.herokuapp.com/">Link to Live Site</a>
-                    <a href="https://github.com/joe-toni/S14-HW-TECH-BLOG">Link to App Repo</a>
-                </div></div>
-                <img src= "sources/images/The_Tech_Blog_Original_Homescreen.png" class= "project-card tech-blog">
+                    </div>
+                    <img src= "sources/images/The_Tech_Blog_Original_Homescreen.png" class= "project-image tech-blog">
+                    <div class = "project-links">                       
+                        <a class = "left-link" href="https://s14-hw-tech-blog.herokuapp.com/">Link to Live Site</a>
+                        <a  class = "right-link" href="https://github.com/joe-toni/S14-HW-TECH-BLOG">Link to App Repo</a>
+                    </div>
+                </div>
 
-                <h3 onclick="focusProject(firstProject, Info[2])">FIRST PROJECT</h3>
-                <div class ="project-info hideInfo">
-                    <p>This project was a collaborative work that was aimed at creating an app that would assist a user in planning
+                <div class = "project-card">  
+                    <h3 onclick="focusProject(firstProject, Info[2])">FIRST PROJECT</h3>    
+                    <div class ="project-info">
+                    <h4>Descritpion</h4>
+                    <p class = "hideInfo">
+                        This project was a collaborative work that was aimed at creating an app that would assist a user in planning
                         potential road trips by providing weather infomation along a route and a planner tool for keeping track of tasks 
                         that needed to be done before, during and after the trip.
-                    </p>
-                    <div class="links">
-                    <a href="https://joe-toni.github.io/thereandback/">Link to Live Site</a>
-                    <a href="https://github.com/joe-toni/thereandback">Link to App Repo</a>
-                </div></div>
-                <img src= "sources/images/There_And_Back_Original_Screenshot.png" class= "project-card first-project">
-            
+                    </p> 
+                    </div>
+                    <img src= "sources/images/There_And_Back_Original_Screenshot.png" class= "project-image first-project">
+                    <div class = "project-links"> 
+                        <a class = "left-link" href="https://joe-toni.github.io/thereandback/">Link to Live Site</a>
+                        <a class = "right-link" href="https://github.com/joe-toni/thereandback">Link to App Repo</a> 
+                    </div>
+                </div>
 
-                <h3 onclick="focusProject(dayPlanner, Info[3])">DAY PLANNER</h3>
-                    <div class="project-info hideInfo">
-                        <p>This app was an assignment that would allow a user to save notes on planned activities though out the day.
-                            It would correctly determine the time of day to color code which segments were either past, present, or future.
-                            The app was also able to persist user entries through site reloads.
-                        </p>
-                        <div class="links">
-                        <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Live Site</a>
-                        <a href= "https://github.com/joe-toni/S5-HW-WORK-DAY-PLANNER" >Link to Site Repo</a>
-                    </div></div>              
-                    <img src= "sources/images/Work_Day_Scheduler_Original_Screenshot.png"  class= "project-card day-planner" >
+                <div class = "project-card">  
+                    <h3 onclick="focusProject(firstProject, Info[3])">DAY PLANNER</h3>    
+                    <div class ="project-info">
+                    <h4>Descritpion</h4>
+                    <p class = "hideInfo">
+                        This app was an assignment that would allow a user to save notes on planned activities though out the day.
+                        It would correctly determine the time of day to color code which segments were either past, present, or future.
+                        The app was also able to persist user entries through site reloads.
+                    </p> 
+                    </div>
+                    <img src= "sources/images/Work_Day_Scheduler_Original_Screenshot.png"  class= "project-image first-project">
+                    <div class = "project-links"> 
+                        <a class = "left-link" href="https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Live Site</a>
+                        <a class = "right-link" href="https://github.com/joe-toni/S5-HW-WORK-DAY-PLANNER" >Link to App Repo</a> 
+                    </div>
+                </div>
 
-
-                <h3 onclick="focusProject(weatherDash, Info[4])">WEATHER DASHBOARD</h3>
-                    <div class= "project-info hideInfo">
-                    <p>This app was an assignment that would allow the user to perform a very basic location search by name in order 
+                <div class = "project-card">  
+                    <h3 onclick="focusProject(firstProject, Info[4])">WEATHER DASHBOARD</h3>    
+                    <div class ="project-info">
+                    <h4>Descritpion</h4>
+                    <p class = "hideInfo">
+                        This app was an assignment that would allow the user to perform a very basic location search by name in order 
                         to get and display the weather for said location. It would display the current conditions as well as a slightly simpler
                         5 day forcast. It would also persist search user search history and display it in a scrollable div. 
-                    </p>
-                    <div class="links">
-                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">Link to Live Site</a>
-                    <a href= "https://github.com/joe-toni/S6-HW-WEATHER-DASHBOARD">Link to Site Repo</a>                    
-                 </div></div>
-                <img src= "sources/images/Weather_Dashboard_Original_Screenshot.png" class= "project-card weather-dashboard">
+                    </p> 
+                    </div>
+                    <img src= "sources/images/Weather_Dashboard_Original_Screenshot.png"  class= "project-image first-project">
+                    <div class = "project-links"> 
+                        <a class = "left-link" href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/" >Link to Live Site</a>
+                        <a class = "right-link" href= "https://github.com/joe-toni/S6-HW-WEATHER-DASHBOARD" >Link to App Repo</a> 
+                    </div>
+                </div>
             </div>
+        
         </main>
 
         <!--The footer section is going to contain links to a few contact methods with the actual values hidden until the user hovers over each one revealing

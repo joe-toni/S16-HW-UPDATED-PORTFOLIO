@@ -14,7 +14,7 @@ body
         flex-direction: column;
         margin: 0 auto;
         height: auto;
-        width: 100vw;
+        width: 97vw;
         max-width: 1280px;
         max-height: 1920px;
     }
@@ -45,7 +45,10 @@ header
                 text-align: center;
                 color: var(--softblue);
             }
-
+        nav
+        {
+            margin: 10px 80px;
+        }
 
         nav a
             {
@@ -133,6 +136,7 @@ main
             display:flex;
             align-items: center;
             flex-direction: column;
+            min-height: 700px;
             height: auto;
         }  
 
@@ -143,7 +147,7 @@ main
         }
     /*Initial Main Section End*/
     /*General styling for all project card classes*/        
-    .project-card
+   /* .project-image
         {
             display: flex;
             border-radius: 5px;
@@ -182,7 +186,7 @@ main
         .hideInfo
             {
                 display: none;
-            }
+            }*/
     /*Project Card Section End*/
 /*Main Section End*/
 /*Styling for the Contact Information portion of the page*/
@@ -227,3 +231,111 @@ main
         
 /*Footer Section End*/
 
+.project-card
+{
+    border: 5px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    margin: 50px 0;
+}
+
+.project-info
+{
+    width: 760px;
+    margin: 0 0 -17px 0;
+}
+
+.project-info p
+{
+    height: 70px;
+}
+
+.hideInfo
+{
+    margin-bottom: -70px;
+}
+
+
+.project-info h4
+{
+    border-top: 3px  var(--softblue);
+    border-left: 3px  var(--softblue);
+    border-right: 3px  var(--softblue); 
+    border-style: outset;
+    background-color: var(--softblue);
+    border-radius: 5px 5px 0 0;
+    margin: 0 0 -17px 0;
+    padding: 0 0 0 10px ;
+    width: 90px;
+}
+
+.project-info h4:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project-info p
+{
+    width: 740px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 0 5px 0 0;
+}
+
+.project-image
+{
+    border: 5px solid black;
+    width: 750px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-links
+{
+    margin: -70px -500px 0 0;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+}
+
+.left-link
+{
+
+    background-color: black;
+    border-radius:  10px 0 0 10px;
+    padding: 5px;
+    border: 5px ridge var(--currentgrey);
+    border-right: 1px solid var(--currentgrey);
+}
+
+.right-link
+{
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+    padding: 5px;
+    border: 5px ridge var(--currentgrey);
+    border-left: 1px solid var(--currentgrey);
+}
+
+
+.project-links a
+{
+    text-align: center;
+    color: var(--softblue);
+    text-decoration: none;
+}
+
+
+
+.left-link:hover, .right-link:hover
+{
+    text-decoration: underline;
+    color: var(--backgroundwhite);
+    border-color: var(--backgroundwhite);
+}
